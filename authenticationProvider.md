@@ -179,7 +179,7 @@ public Object getSalt(UserDetails user);
 
 下面来看几个使用 salt-source 的示例。
 
-1. 下面的配置将使用常量 “abc” 作为 salt。
+1.下面的配置将使用常量“abc”作为 salt。
 
 ```
    <security:authentication-manager>
@@ -191,7 +191,7 @@ public Object getSalt(UserDetails user);
    </security:authentication-manager>
 ```
  
-2. 下面的配置将使用 UserDetails 的 username 作为 salt。
+2.下面的配置将使用 UserDetails 的 username 作为 salt。
 
 ```
    <security:authentication-manager>
@@ -203,7 +203,7 @@ public Object getSalt(UserDetails user);
    </security:authentication-manager>
 ```
 
-3. 下面的配置将使用自己实现的 SaltSource 获取 salt。其中 mySaltSource 就是 SaltSource 实现类对应的 bean 的引用。
+3.下面的配置将使用自己实现的 SaltSource 获取 salt。其中 mySaltSource 就是 SaltSource 实现类对应的 bean 的引用。
 
 ```
    <security:authentication-manager>
